@@ -4,13 +4,15 @@ import axios from "axios";
 
 const fetchPrices = async () => {
   const { data } = await axios.get(
-    "https://jsonplaceholder.typicode.com/posts"
+    "https://api.coingecko.com/api/v3/coins/list?include_platform=false"
   );
   return data;
 };
 
 export default function Index() {
   const { status, data, error, isFetching } = useQuery("prices", fetchPrices);
+
+  console.log(data.length);
 
   return <div>test</div>;
 }
