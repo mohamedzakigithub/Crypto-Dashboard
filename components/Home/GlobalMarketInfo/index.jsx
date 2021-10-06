@@ -9,7 +9,7 @@ const fetchPrices = async () => {
   return data;
 };
 
-export default function index() {
+export default function Index() {
   const [chartData, setChartData] = useState();
   const { data, error, isLoading } = useQuery(
     ["globalMarketInfo"],

@@ -29,7 +29,7 @@ const fetchPrices = async ({ queryKey }) => {
   return data;
 };
 
-export default function index() {
+export default function Index() {
   const [page, setPage] = useState(1);
   const filterRef = useRef();
   const [filteredCoins, setFilteredCoins] = useState([]);
@@ -168,7 +168,13 @@ export default function index() {
                 <Td w="5%">{i + 1}</Td>
                 <Td>
                   <HStack>
-                    <Image src={coin.image} top={0} left={0} h="30px" />
+                    <Image
+                      src={coin.image}
+                      top={0}
+                      left={0}
+                      h="30px"
+                      alt="coin logo"
+                    />
                     <Text>{coin.symbol}</Text>
                   </HStack>
                 </Td>
