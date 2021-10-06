@@ -12,11 +12,14 @@
     "@chakra-ui/react": "^1.6.8",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@nivo/core": "^0.73.0",
+    "@nivo/pie": "^0.73.0",
     "axios": "^0.22.0",
     "framer-motion": "^4.1.17",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
     "react-query": "^3.25.1"
   },
   "devDependencies": {
