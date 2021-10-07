@@ -91,8 +91,7 @@ export default function Index() {
   return (
     <VStack>
       <Box
-        w="full"
-        h="100px"
+        w="100%"
         border="4px"
         borderColor="blue.500"
         borderRadius="lg"
