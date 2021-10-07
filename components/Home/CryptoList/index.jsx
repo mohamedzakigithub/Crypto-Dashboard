@@ -138,6 +138,7 @@ export default function Index() {
       {isLoading ? (
         <Center h="300px">
           <Spinner
+            data-testid="Loading-spinner"
             thickness="4px"
             speed="0.65s"
             emptyColor="gray.200"
@@ -150,7 +151,12 @@ export default function Index() {
           <Text>No coins match this search.</Text>
         </Center>
       ) : (
-        <Table variant="striped" colorScheme="cyan" size="sm">
+        <Table
+          variant="striped"
+          colorScheme="cyan"
+          size="sm"
+          data-testid="data-table"
+        >
           <Thead>
             <Tr>
               <Th>Rank</Th>
