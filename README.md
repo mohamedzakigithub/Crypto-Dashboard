@@ -6,7 +6,7 @@ https://crypto-dashboard-psi.vercel.app/
 
 ## Description
 
-This is a React app built with NextJs that fetches data from CoinGecko API endpoints and displays a table with all listed coins and a subset of global market data.
+This is a React app built with NextJs that fetches data from CoinGecko API endpoints and displays a table with all listed coins, trending coins based on trading volume and a subset of global market data.
 
 ## Packages
 
@@ -21,7 +21,7 @@ This is a React app built with NextJs that fetches data from CoinGecko API endpo
 
 The app contains three components in three different tabs.
 
-- This first tab displays all listed cryptocurrencies ordered by market cap.
+- The first tab displays all listed cryptocurrencies ordered by market cap.
 - The second tab displays trending currencies ordered by trading volume.
 - The third tab displays a pie chart listing global market share for the top currencies.
 
@@ -33,4 +33,4 @@ The app contains three components in three different tabs.
 
 ## Testing
 
-The app contains a unit test for the Cryptocurrencies list. It loads the component and wait for the loading spinner to disappear and checks for if the table is rendered.
+The app contains a unit test for the Cryptocurrencies list. It loads the component and wait for the loading spinner to disappear and checks if the table is rendered.
